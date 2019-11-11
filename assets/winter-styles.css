@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800|Nunito:400,700,800&display=swap');
+.accent {
+  color: #AF1D1B
+}
+.accent2 {
+  color: #00797B;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.card {
+  position: relative;
+}
+.text-container {
+  text-align: center;
+  font-size: 2vw;
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+h1, h2 {
+  margin: 0;
+}
+h1 {
+  font-family: 'Nunito', sans-serif;
+}
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+.bold {
+  font-weight: 700;
+}
+.text-container h2 {
+  font-size: 2vw;
+}
