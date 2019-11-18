@@ -1,15 +1,18 @@
-new Vue({
+var vue = new Vue({
+  el: '#app',
   mixins: [mixin],
   data: function () {
     return {
-      message: 'goodbye',
-      bar: 'def'
+      title: 'testkaaaaa'
     }
   },
   methods: {
-    
+
   },
   created: function () {
-    this.reset()
+    console.log()
+  },
+  mounted () {
+    // windowButtonOpen.$options.methods.openWindow()
   }
 })

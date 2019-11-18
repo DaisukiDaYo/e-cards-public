@@ -1,5 +1,5 @@
 new Vue({
-    el: '#background',
+    el: '#background-1',
     data: {},
     template: `
     <svg viewBox="0 0 1366 768">
