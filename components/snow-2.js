@@ -4,7 +4,7 @@ new Vue({
     data: {
     },
     template: `
-    <svg>
+    <svg class="animated blink-2">
       <g id="snow-02">
         <path class="cls-6" d="M131.83,157.74c5.94,0,5.95-9.22,0-9.22s-6,9.22,0,9.22Z" />
         <path class="cls-6" d="M138,196.19c5.94,0,6-9.23,0-9.23s-5.95,9.23,0,9.23Z" />

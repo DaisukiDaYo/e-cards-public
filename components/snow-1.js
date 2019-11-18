@@ -3,8 +3,8 @@ new Vue({
     el: '#snow-1',
     data: {
     },
-    template: 
-    `<svg>
+    template:
+    `<svg class="animated blink">
         <g id="snow-01">
         <path class="cls-6" d="M127.22,137.75c5.93,0,5.94-9.22,0-9.22s-6,9.22,0,9.22Z"/>
         <path class="cls-6" d="M153.36,176.2c5.93,0,5.94-9.23,0-9.23s-6,9.23,0,9.23Z"/>
@@ -54,6 +54,6 @@ new Vue({
         <path class="cls-6" d="M1182.08,36.26c5.94,0,6-9.22,0-9.22s-5.94,9.22,0,9.22Z"/>
         <path class="cls-6" d="M1325.09,44c5.94,0,6-9.22,0-9.22s-5.95,9.22,0,9.22Z"/>
       </g>
-        
+
     </svg>`
 })
