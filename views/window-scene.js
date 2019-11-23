@@ -9,7 +9,6 @@ var windowScene = new Vue({
 
   },
   created: function () {
-    console.log(windowButtonOpen)
   },
   template:
     `
