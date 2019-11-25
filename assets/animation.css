@@ -1,3 +1,24 @@
+/** Delay **/
+.delay-500ms {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+.delay-600ms {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+.delay-700ms {
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
+}
+.delay-800ms {
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+.delay-900ms {
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
 /** Animation **/
 .animated > g {
   -webkit-animation-duration: 1s;
@@ -88,4 +109,41 @@
 .blink-2 {
   animation: blink-2 0.2s infinite alternate;
 }
+
+/* Keyframes */
+
+@keyframes zoomInZoomOut {
+  100% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.4);
+    transform-origin: center;
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center;
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.02);
+    transform-origin: center;
+  }
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center;
+  }
+}
+
+.zoomInZoomOut > g {
+  -webkit-animation-name: zoomInZoomOut;
+  animation-name: zoomInZoomOut;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1
+}
+
 /** End Animation **/

@@ -1,8 +1,13 @@
 new Vue({
   el: '#icon-social-media',
   data: {},
+  methods: {
+    social () {
+      alert('social')
+    }
+  },
   template: `
-    <svg>
+    <svg @click="social">
         <g>
         <g>
           <circle class="cls-132" cx="607.99" cy="713.62" r="15"/>

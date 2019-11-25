@@ -2,7 +2,6 @@
 new Vue({
     el: '#button-play-again',
     template: `
-    <svg @click="reset()">
         <g>
             <rect class="cls-2" x="1201.83" y="710.86" width="132.19" height="28.17" rx="14.09"/>
             <g>
@@ -27,6 +26,5 @@ new Vue({
                 </g>
             </g>
         </g>
-    </svg>
     `
 })

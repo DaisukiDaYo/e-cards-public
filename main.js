@@ -3,10 +3,15 @@ var vue = new Vue({
   mixins: [mixin],
   data: function () {
     return {
-      title: 'testkaaaaa'
+      title: 'testkaaaaa',
+      isOpen: false,
+      white: '#fff',
     }
   },
   methods: {
+    test () {
+      alert('test')
+    }
 
   },
   created: function () {

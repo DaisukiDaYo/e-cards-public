@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800|Nunito:400,700,800&display=swap');
 body {
   margin: 0;
+  background-color: #DCF2FB;
+}
+#app {
 }
 .accent {
   color: #AF1D1B
@@ -12,7 +15,7 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
-.card1, .card2 {
+.card {
   position: relative;
 }
 .text-container {
@@ -38,6 +41,80 @@ h2 {
 .text-container h2 {
   font-size: 2vw;
 }
-.svg-button {
+.vitual-button-container {
+  position: relative;
+  margin: auto;
+}
+.vitual-button {
+  border: 1px solid #fff;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  width: 14em;
+  left: 50%;
+  transform: translate(-7em, 17.5em);
   cursor: pointer;
+  text-align: center;
+  height: 2.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.vignette-effect {
+   position: static;
+}
+.vignette-effect::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: radial-gradient(transparent, #0c0c0c)
+}
+.svg-container {
+  /* width: 15em; */
+}
+
+svg {
+  /* position: fixed;
+  height: 100%;
+  left: 50%;
+  margin-left: -88.888vh; */
+}
+
+.button {
+  cursor: pointer;
+}
+.button:active  {
+  transform: translateY(2px);
+  transform-origin: center;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  svg {
+    height: auto;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    margin-left: 0;
+    margin-top: -28.125vw;
+  }
+} */
+
+@media  (max-width: 991px) {}
+@media (max-width: 767px) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
