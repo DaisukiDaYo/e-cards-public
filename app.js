@@ -12,6 +12,13 @@ Vue.component('window-scene', {
       // this.width = window.innerWidth
       // this.height = window.innerHeight
       // :width="width" :height="height"
+      let SVGbutton = this.$refs['svg-button'].$el.getBoundingClientRect();
+      let virtualButton = this.$refs['vitual-button'];
+
+      virtualButton.style.width = SVGbutton.width + 'px';
+      virtualButton.style.height = SVGbutton.height + 'px';
+      virtualButton.style.top = SVGbutton.y + window.scrollY + 'px';
+      virtualButton.style.left = SVGbutton.x + window.scrollX + 'px';
     }
   },
   created () {
@@ -3214,6 +3221,15 @@ var vm = new Vue({
         await this.delay(1000)
         this.isSoundOn = true
       },
+      calculateButtonPosition: function () {
+        let SVGbutton = this.$refs['svg-button'].$el.getBoundingClientRect()
+        let virtualButton = this.$refs['vitual-button']
+
+        virtualButton.style.width = SVGbutton.width + 'px'
+        virtualButton.style.height = SVGbutton.height + 'px'
+        virtualButton.style.top = SVGbutton.y + window.scrollY + 'px'
+        virtualButton.style.left = SVGbutton.x + window.scrollX + 'px'
+      }
     },
     watch: {
       isSoundOn: function (newValue, oldValue) {
@@ -3226,6 +3242,19 @@ var vm = new Vue({
         }
       }
     },
+    mounted: function() {
+      this.calculateButtonPosition()
+    },
+    created: function() {
+      window.addEventListener('resize', this.calculateButtonPosition)
+      this.calculateViewPort()
+    },
+    destroyed: function() {
+      window.removeEventListener('resize', this.calculateButtonPosition)
+    },
   })
+
+
+
 
 

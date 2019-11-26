@@ -22,7 +22,7 @@
     <div v-if="card === 1" class="card">
       <div v-if="!isOpen" class="vignette-effect"></div>
       <div v-if="!isOpen" class="vitual-button-container" @click="openWindow()">
-        <div class="vitual-button">Click to open the window!</div>
+        <div ref="vitual-button" class="vitual-button">Click to open the window!</div>
       </div>
       <window-scene :class="{ 'animated zoomInZoomOut 1s': isTransition }">
         <background-1></background-1>
@@ -32,7 +32,7 @@
         <window-open-3 v-if="step === 3" :class="{ 'animated fade 1s': step === 3 }"></window-open-3>
         <window-open-4 v-if="step === 4" :class="{ 'animated fade 1s': step === 4 }"></window-open-4>
         <window-open-5 v-if="step === 5" :class="{ 'animated fade 1s': step === 5 }"></window-open-5>
-        <button-open-window class="button" :class="isOpen? 'animated fadeOut 1s': 'button'"></button-open-window>
+        <button-open-window ref="svg-button" class="button" :class="isOpen? 'animated fadeOut 1s': 'button'"></button-open-window>
       </window-scene>
     </div>
     <div v-if="card === 2" class="card" :class="{ 'animated fadeIn 1s delay-1s': isTransition }">
