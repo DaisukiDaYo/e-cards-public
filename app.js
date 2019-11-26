@@ -11,7 +11,7 @@ Vue.component('window-scene', {
       // this.viewBox = `0 0 ${window.innerWidth} ${window.innerHeight}`
       // this.width = window.innerWidth
       // this.height = window.innerHeight
-      // :width="width" :height="height" 
+      // :width="width" :height="height"
     }
   },
   created () {
@@ -740,7 +740,7 @@ Vue.component('window-scene', {
     <g id="Layer_2" data-name="Layer 2">
       <g id="scene-01">
         <slot></slot>
-        
+
       </g>
     </g>
   </svg>
@@ -750,7 +750,7 @@ Vue.component('window-scene', {
 Vue.component('winter-scene', {
     props: ['title'],
     template: `
-    
+
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768" class="full svg-container">
@@ -759,568 +759,568 @@ Vue.component('winter-scene', {
         .cls-1 {
           fill: #b5e0ee;
         }
-  
+
         .cls-2 {
           fill: #dff2fb;
         }
-  
+
         .cls-3 {
           fill: #c6e8f0;
         }
-  
+
         .cls-4 {
           fill: #dbf0f5;
         }
-  
+
         .cls-5 {
           fill: #c8e9f3;
         }
-  
+
         .cls-6 {
           fill: #e8f6fa;
         }
-  
+
         .cls-7 {
           fill: #2ab7ba;
         }
-  
+
         .cls-8 {
           fill: #8fd4e9;
         }
-  
+
         .cls-9 {
           fill: #e6f5f7;
         }
-  
+
         .cls-10 {
           fill: #a1daeb;
         }
-  
+
         .cls-11 {
           fill: #256fb6;
         }
-  
+
         .cls-12 {
           fill: #ee4f55;
         }
-  
+
         .cls-13 {
           fill: #d7effc;
         }
-  
+
         .cls-14 {
           fill: #fbac5c;
         }
-  
+
         .cls-15 {
           fill: #ef5824;
         }
-  
+
         .cls-16 {
           fill: #fcbd7a;
         }
-  
+
         .cls-17 {
           fill: #0094d8;
         }
-  
+
         .cls-18 {
           fill: #3583b0;
         }
-  
+
         .cls-19 {
           fill: url(#radial-gradient);
         }
-  
+
         .cls-20 {
           fill: url(#radial-gradient-2);
         }
-  
+
         .cls-21 {
           fill: url(#radial-gradient-3);
         }
-  
+
         .cls-22 {
           fill: url(#radial-gradient-4);
         }
-  
+
         .cls-23 {
           fill: url(#radial-gradient-5);
         }
-  
+
         .cls-24 {
           fill: url(#radial-gradient-6);
         }
-  
+
         .cls-25 {
           fill: #edaea7;
         }
-  
+
         .cls-26 {
           fill: #b62924;
         }
-  
+
         .cls-27 {
           fill: #f1a298;
         }
-  
+
         .cls-28 {
           fill: #005d5f;
         }
-  
+
         .cls-29 {
           fill: #007f82;
         }
-  
+
         .cls-30 {
           fill: #134079;
         }
-  
+
         .cls-31 {
           fill: #715c53;
         }
-  
+
         .cls-32 {
           fill: #6e655b;
         }
-  
+
         .cls-33 {
           fill: #d1c3c1;
         }
-  
+
         .cls-34 {
           fill: #f2edeb;
         }
-  
+
         .cls-35 {
           fill: #a49e9f;
         }
-  
+
         .cls-36 {
           fill: #b6b1b1;
         }
-  
+
         .cls-37 {
           fill: #e8e1dc;
         }
-  
+
         .cls-38 {
           fill: #463b3c;
         }
-  
+
         .cls-39 {
           fill: #857e7e;
         }
-  
+
         .cls-40 {
           fill: #feeff0;
         }
-  
+
         .cls-41 {
           fill: #f7a498;
         }
-  
+
         .cls-42 {
           fill: #f0624e;
         }
-  
+
         .cls-43 {
           fill: #00559f;
         }
-  
+
         .cls-44 {
           fill: #cbdbeb;
         }
-  
+
         .cls-45 {
           fill: #009690;
         }
-  
+
         .cls-46 {
           fill: #008f92;
         }
-  
+
         .cls-47 {
           fill: #ed4044;
         }
-  
+
         .cls-48 {
           fill: #2e76b3;
         }
-  
+
         .cls-49 {
           fill: #7f322e;
         }
-  
+
         .cls-50 {
           fill: #fcd6d7;
         }
-  
+
         .cls-51 {
           fill: #84161b;
         }
-  
+
         .cls-52 {
           fill: #004471;
         }
-  
+
         .cls-53 {
           fill: #285f80;
         }
-  
+
         .cls-54 {
           fill: #61c4ce;
         }
-  
+
         .cls-55 {
           fill: #008183;
         }
-  
+
         .cls-56 {
           fill: #eac6b7;
         }
-  
+
         .cls-57 {
           fill: #dcab92;
         }
-  
+
         .cls-127, .cls-58, .cls-89 {
           fill: #826669;
         }
-  
+
         .cls-127, .cls-58, .cls-90 {
           stroke: #5f4a4c;
         }
-  
+
         .cls-127, .cls-58, .cls-64, .cls-79, .cls-90 {
           stroke-miterlimit: 10;
         }
-  
+
         .cls-58 {
           stroke-opacity: 0.3;
         }
-  
+
         .cls-127, .cls-58, .cls-64, .cls-90 {
           stroke-width: 0.25px;
         }
-  
+
         .cls-59 {
           fill: #175875;
         }
-  
+
         .cls-60 {
           fill: #3f8ab4;
         }
-  
+
         .cls-61 {
           fill: #f58f7f;
         }
-  
+
         .cls-62 {
           fill: #8f211e;
         }
-  
+
         .cls-63 {
           fill: #ed423f;
         }
-  
+
         .cls-64 {
           fill: #e2f3f7;
           stroke: #c6c6d1;
           stroke-opacity: 0.9;
         }
-  
+
         .cls-65 {
           fill: #00888b;
         }
-  
+
         .cls-66 {
           fill: #00b2b9;
         }
-  
+
         .cls-67 {
           fill: #ef5956;
         }
-  
+
         .cls-68 {
           fill: #ed454d;
         }
-  
+
         .cls-69 {
           fill: #f0616b;
         }
-  
+
         .cls-70 {
           fill: #75ccea;
         }
-  
+
         .cls-71 {
           fill: #d82e32;
         }
-  
+
         .cls-72 {
           fill: #005587;
         }
-  
+
         .cls-73 {
           fill: #f9b2a0;
         }
-  
+
         .cls-74 {
           fill: #f8b5b7;
         }
-  
+
         .cls-75 {
           fill: #104055;
         }
-  
+
         .cls-76 {
           fill: #023754;
         }
-  
+
         .cls-77 {
           fill: #003848;
         }
-  
+
         .cls-78 {
           fill: #005d61;
         }
-  
+
         .cls-122, .cls-79 {
           fill: #fff;
         }
-  
+
         .cls-79 {
           stroke: #00799b;
           stroke-opacity: 0.15;
         }
-  
+
         .cls-80 {
           fill: #f9aa88;
         }
-  
+
         .cls-81 {
           fill: #2893ae;
         }
-  
+
         .cls-82 {
           fill: #043956;
         }
-  
+
         .cls-83 {
           fill: #f0635f;
         }
-  
+
         .cls-84 {
           fill: #f79f89;
         }
-  
+
         .cls-85 {
           fill: #3299c7;
         }
-  
+
         .cls-86 {
           fill: #f26d2a;
         }
-  
+
         .cls-87 {
           fill: #f58a68;
         }
-  
+
         .cls-88 {
           fill: #f59082;
         }
-  
+
         .cls-90 {
           fill: none;
           opacity: 0.35;
         }
-  
+
         .cls-91 {
           fill: #f89c5c;
         }
-  
+
         .cls-92 {
           fill: #005e60;
         }
-  
+
         .cls-93 {
           fill: #f27574;
         }
-  
+
         .cls-94 {
           opacity: 0.28;
         }
-  
+
         .cls-95 {
           fill: #977179;
         }
-  
+
         .cls-96 {
           fill: #0a3452;
         }
-  
+
         .cls-97 {
           fill: #f7a196;
         }
-  
+
         .cls-98 {
           fill: #c4786d;
           opacity: 0.5;
         }
-  
+
         .cls-99 {
           fill: #003d5d;
         }
-  
+
         .cls-100 {
           fill: #eb9d82;
         }
-  
+
         .cls-101 {
           fill: #152331;
         }
-  
+
         .cls-102 {
           fill: #1d3144;
         }
-  
+
         .cls-103 {
           fill: #335176;
         }
-  
+
         .cls-104 {
           fill: #007b83;
         }
-  
+
         .cls-105 {
           fill: #ecb9a2;
         }
-  
+
         .cls-106 {
           fill: #ee4b55;
         }
-  
+
         .cls-107 {
           fill: #2751a0;
         }
-  
+
         .cls-108 {
           fill: #45291f;
         }
-  
+
         .cls-109 {
           fill: #ac7248;
         }
-  
+
         .cls-110 {
           fill: #dea58d;
         }
-  
+
         .cls-111 {
           fill: #24222c;
         }
-  
+
         .cls-112 {
           fill: #233c56;
         }
-  
+
         .cls-113 {
           fill: #f5862e;
         }
-  
+
         .cls-114 {
           fill: #eeb0a7;
         }
-  
+
         .cls-115 {
           fill: #f89a4a;
         }
-  
+
         .cls-116 {
           fill: #07acb1;
         }
-  
+
         .cls-117 {
           fill: #e7b38d;
         }
-  
+
         .cls-118 {
           fill: #00b1b0;
         }
-  
+
         .cls-119 {
           fill: #f9bb91;
         }
-  
+
         .cls-120 {
           fill: #9b6e5e;
         }
-  
+
         .cls-121 {
           fill: #4f2d3c;
         }
-  
+
         .cls-123 {
           fill: #271b12;
         }
-  
+
         .cls-124 {
           fill: #2f71b7;
         }
-  
+
         .cls-125 {
           fill: #da2d31;
         }
-  
+
         .cls-126 {
           fill: #feddba;
         }
-  
+
         .cls-128 {
           fill: #afccdf;
         }
-  
+
         .cls-129 {
           fill: #007b8b;
         }
-  
+
         .cls-130 {
           isolation: isolate;
         }
-  
+
         .cls-131 {
           fill: #01797b;
         }
-  
+
         .cls-132 {
           fill: #354e8d;
         }
-  
+
         .cls-133 {
           fill: #3c90ce;
         }
-  
+
         .cls-134 {
           fill: #d84133;
         }
-  
+
         .cls-135 {
           fill: #0d6baa;
         }
-  
+
         .cls-136 {
           fill: #4f5465;
         }
-  
+
         .cls-137 {
           fill: #ae1f22;
         }
-  
+
         .cls-138 {
           fill: #15203d;
         }
-  
+
         .cls-139 {
           fill: #26a0db;
         }
@@ -1406,7 +1406,7 @@ Vue.component('winter-scene', {
         <path class="cls-47" d="M1265.33,506c3,.51,8.11,2.72,10.84,11.61,0,0,2.9,3,3.69-1.71,0,0,1.84-8.3.26-12,0,0-9.77-2.65-15.09.39A.92.92,0,0,0,1265.33,506Z"/>
         <path class="cls-50" d="M1279.17,503.64a.5.5,0,0,1-.68-.13,1.33,1.33,0,0,1-.23-.71l-.12-.84a5,5,0,0,1,0-2.43,1.74,1.74,0,0,1,1.88-1.22c.87.21,1.42,1.32,2.32,1.28.44,0,.83-.34,1.27-.3s.83.51,1.06,1a3.84,3.84,0,0,1,0,3.94,5,5,0,0,1-2.69,1.49c-1.11.34-.84-.33-1.51-.67S1278.62,504.89,1279.17,503.64Z"/>
       </g>
-      
+
 
       <g id="boy-left">
         <path class="cls-65" d="M384.24,610.47c9.05,4.12,13.5,14.81,22.18,19.66-4.09,2.6-8.54,4.91-13.84,3.67a3.59,3.59,0,0,1-1.27-.31,2.61,2.61,0,0,1-.84-1.56,52.19,52.19,0,0,0-12.39-22c-.48-.5,2.39-.73,2.49-.72A12.71,12.71,0,0,1,384.24,610.47Z"/>
@@ -3170,11 +3170,11 @@ Vue.component('icon-sound-off', {
     <path id="sound-off" class="cls-30" d="M1313.17,28.07v24.4c0,1.2-.7,1.5-1.6.7l-4.3-4.2c-.9-.8-2.3-2.2-3.1-3l-.2-.2h-4.8a1.32,1.32,0,0,1-1.3-1.3V36a1.32,1.32,0,0,1,1.3-1.3h4.8l.2-.2c.9-.8,2.3-2.2,3.1-3l4.3-4.2C1312.47,26.57,1313.17,26.87,1313.17,28.07Z"/>
   `
 })
-  
+
 var initData = function () {
   return {
     audioLink: './assets/christmas-cheer.wav',
-    card: 2,
+    card: 1,
     isOpen: false,
     isSoundOn: false,
     isTransition: false,
@@ -3225,7 +3225,7 @@ var vm = new Vue({
           audio.pause()
         }
       }
-    }
+    },
   })
 
 
