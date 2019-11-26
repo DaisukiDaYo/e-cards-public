@@ -6,28 +6,6 @@ Vue.component('window-scene', {
       width: '100%'
     }
   },
-  methods: {
-    calculateViewPort: function () {
-      // this.viewBox = `0 0 ${window.innerWidth} ${window.innerHeight}`
-      // this.width = window.innerWidth
-      // this.height = window.innerHeight
-      // :width="width" :height="height"
-      let SVGbutton = this.$refs['svg-button'].$el.getBoundingClientRect();
-      let virtualButton = this.$refs['vitual-button'];
-
-      virtualButton.style.width = SVGbutton.width + 'px';
-      virtualButton.style.height = SVGbutton.height + 'px';
-      virtualButton.style.top = SVGbutton.y + window.scrollY + 'px';
-      virtualButton.style.left = SVGbutton.x + window.scrollX + 'px';
-    }
-  },
-  created () {
-    window.addEventListener('resize', this.calculateViewPort)
-    this.calculateViewPort();
-  },
-  destroyed () {
-    window.removeEventListener('resize', this.calculateViewPort)
-  },
   template: `
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :viewBox="viewBox" class="full svg-container">
     <defs>
@@ -3247,7 +3225,6 @@ var vm = new Vue({
     },
     created: function() {
       window.addEventListener('resize', this.calculateButtonPosition)
-      this.calculateViewPort()
     },
     destroyed: function() {
       window.removeEventListener('resize', this.calculateButtonPosition)
