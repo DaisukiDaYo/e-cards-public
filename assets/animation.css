@@ -51,6 +51,29 @@
   animation-name: bounce;
 }
 
+@-webkit-keyframes girl-left-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25%, 50%, 75% {
+    transform: translateY(16px);
+  }
+}
+@keyframes girl-left-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25%, 50%, 75% {
+    transform: translateY(16px);
+  }
+}
+.girl-left-bounce {
+  -webkit-animation-name: girl-left-bounce;
+  animation-name: girl-left-bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
 @keyframes swing {
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
