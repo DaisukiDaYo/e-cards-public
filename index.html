@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
   <link rel="stylesheet" type="text/css" href="./assets/animation.css" />
-  <title>Document</title>
+  <title>E-Card Winter 2020</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       Please rotate your device!
     </div>
   </div>
-    <div v-if="card === 1" class="card">
+    <div v-if="card === 1" class="card" @change="calculateButtonPosition()">
       <div v-if="!isOpen" class="vignette-effect"></div>
       <div v-if="!isOpen" class="vitual-button-container" @click="openWindow()">
         <div ref="vitual-button" class="vitual-button">Click to open the window!</div>
