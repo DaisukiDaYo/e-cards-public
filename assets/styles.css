@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800|Nunito:400,700,800&display=swap');
 body {
   margin: 0;
-  background-color: #DCF2FB;
+  background: rgb(217,240,245);
+  background: linear-gradient(0deg, rgba(217,240,245,1) 0%, rgba(217,240,245,1) 20%, rgba(175,223,237,1) 100%);
+
 }
+
 html, body {
   width: 100%;
   height: 100%;
+  font-family: 'Nunito', sans-serif;
 }
 .full {
   background-size: cover;
@@ -84,7 +88,14 @@ h2 {
   transform: translateY(2px);
   transform-origin: center;
 }
+.svg-background {
+  transform: translate(-50%, -50%) ;
+}
 
+.svg-background-winter {
+  transform: scale(1.23);
+  transform-origin: center;
+}
 /* .svg-container  {
   position: fixed;
   height: 100%;
