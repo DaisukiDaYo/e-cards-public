@@ -51,27 +51,129 @@
   animation-name: bounce;
 }
 
-@-webkit-keyframes girl-left-bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  25%, 50%, 75% {
-    transform: translateY(16px);
-  }
-}
 @keyframes girl-left-bounce {
-  0%, 100% {
+  0% {
     transform: translateY(0);
   }
-  25%, 50%, 75% {
+  50%, 100% {
     transform: translateY(16px);
   }
 }
 .girl-left-bounce {
   -webkit-animation-name: girl-left-bounce;
   animation-name: girl-left-bounce;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+@keyframes man-left-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50%, 100% {
+    transform: translateY(6px);
+  }
+}
+.man-left-bounce {
+  -webkit-animation-name: man-left-bounce;
+  animation-name: man-left-bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes boy-left-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50%, 100% {
+    transform: translateY(24px);
+  }
+}
+.boy-left-bounce {
+  -webkit-animation-name: boy-left-bounce;
+  animation-name: boy-left-bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes couple-girl-left-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50%, 100% {
+    transform: translateY(18px);
+  }
+}
+.couple-girl-left-bounce {
+  -webkit-animation-name: couple-girl-left-bounce;
+  animation-name: couple-girl-left-bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 0.85s;
+}
+
+@keyframes girl-right-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50%, 100% {
+    transform: translateY(6px);
+  }
+}
+.girl-right-bounce {
+  -webkit-animation-name: girl-right-bounce;
+  animation-name: girl-right-bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 0.95s;
+}
+
+@keyframes family-right-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50%, 100% {
+    transform: translateY(8px);
+  }
+}
+.family-right-bounce {
+  -webkit-animation-name: family-right-bounce;
+  animation-name: family-right-bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes woman-right-bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50%, 100% {
+    transform: translateX(7px);
+  }
+}
+.woman-right-bounce {
+  -webkit-animation-name: woman-right-bounce;
+  animation-name: woman-right-bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
 }
 
 @keyframes swing {

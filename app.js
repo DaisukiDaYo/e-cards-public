@@ -3159,7 +3159,7 @@ Vue.component('icon-sound-off', {
 var initData = function () {
   return {
     audioLink: './assets/christmas-cheer.wav',
-    card: 1,
+    card: 2,
     isOpen: false,
     isSoundOn: false,
     isTransition: false,
