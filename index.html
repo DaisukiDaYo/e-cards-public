@@ -12,19 +12,17 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" :class="{'card1': card === 1, 'card2': isTransition }">
   <div class="overlay">
     <div class="phone"></div>
     <div class="message">
       Please rotate your device!
     </div>
   </div>
-    <div v-if="card === 1" class="card" @change="calculateButtonPosition()">
+    <div class="card1" :class="{ 'hidden': card !== 1, 'animated fadeOut faster delay-1s': isTransition }">
       <div v-if="!isOpen" class="vignette-effect"></div>
-      <div v-if="!isOpen" class="vitual-button-container" @click="openWindow()">
-        <div ref="vitual-button" class="vitual-button">Click to open the window!</div>
-      </div>
-      <window-scene :class="{ 'animated zoomInZoomOut 1s': isTransition }">
+      <div v-if="!isOpen" ref="vitual-button" @click="openWindow()" @mouseover="isMouseOverButton = true" @mouseleave="isMouseOverButton = false" class="vitual-button"></div>
+      <window-scene v-if="card === 1" :class="{ 'animated zoomInZoomOut faster': isTransition }">
         <background-1></background-1>
         <window-close v-if="step === 0" :class="{ 'animated fadeOut 1s': step === 1 }"></window-close>
         <window-open-1 v-if="step === 1" :class="{ 'animated fade 1s': step === 1 }"></window-open-1>
@@ -32,16 +30,19 @@
         <window-open-3 v-if="step === 3" :class="{ 'animated fade 1s': step === 3 }"></window-open-3>
         <window-open-4 v-if="step === 4" :class="{ 'animated fade 1s': step === 4 }"></window-open-4>
         <window-open-5 v-if="step === 5" :class="{ 'animated fade 1s': step === 5 }"></window-open-5>
-        <button-open-window ref="svg-button" class="button" :class="isOpen? 'animated fadeOut 1s': 'button'"></button-open-window>
+        <button-open-window ref="svg-button" class="button" :class="{ 'animated fadeOut 1s': isOpen , 'translateY-5px' : isMouseOverButton }"></button-open-window>
       </window-scene>
     </div>
-    <div v-if="card === 2" class="card" :class="{ 'animated fadeIn 1s delay-1s': isTransition }">
+    <div class="card2" :class="{ 'animated fadeIn 1s delay-700ms': isTransition, 'hidden': card !== 2 }">
+      <div class="share-container">
+        <div class="addthis_inline_share_toolbox_jk3y"></div>
+      </div>
       <div class="text-container stroke">
         <h2 class="uppercase text-center accent2">The season is warm and full of joy</h2>
         <h1 class="uppercase bold accent">Holiday Cheers Test!</h1>
         <h2 class="uppercase text-center accent">From all of us here at <span>Company</span></h2>
       </div>
-      <winter-scene>
+      <winter-scene v-if="card === 2">
         <background-2></background-2>
         <!-- left -->
         <the-man-2 class="animated man-left-bounce infinite"></the-man-2>
@@ -66,17 +67,20 @@
         <g v-if="isSoundOn" @click="isSoundOn = false" class="button"><icon-sound-on></icon-sound-on></g>
         <g v-else @click="isSoundOn = true" class="button"><icon-sound-off></icon-sound-off></g>
         <g @click="playAgain()" class="button"><button-play-again></button-play-again></g>
-        <icon-facebook class="button"></icon-facebook>
+        <!-- <icon-facebook class="button at-icon-wrapper at-share-btn at-svc-facebook"></icon-facebook>
         <icon-twitter class="button"></icon-twitter>
         <icon-linked-in class="button"></icon-linked-in>
         <icon-email class="button"></icon-email>
-        <icon-share class="button"></icon-share>
+        <icon-share class="button"></icon-share> -->
       </winter-scene>
     </div>
   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./component.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-530087f4218354af"></script>
+
   </body>
 
   </html>

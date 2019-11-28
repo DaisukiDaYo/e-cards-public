@@ -32,18 +32,22 @@
 }
 @-webkit-keyframes bounce {
   0%, 100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 }
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
 }
 .bounce > g {
@@ -51,129 +55,265 @@
   animation-name: bounce;
 }
 
-@keyframes girl-left-bounce {
+@-webkit-keyframes girl-left-bounce {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50%, 100% {
-    transform: translateY(16px);
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
+  }
+}
+
+@keyframes girl-left-bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
   }
 }
 .girl-left-bounce {
   -webkit-animation-name: girl-left-bounce;
   animation-name: girl-left-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes man-left-bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
 }
 
 @keyframes man-left-bounce {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50%, 100% {
-    transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
 }
 .man-left-bounce {
   -webkit-animation-name: man-left-bounce;
   animation-name: man-left-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  animation-delay: 0.5s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes boy-left-bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
+  }
 }
 
 @keyframes boy-left-bounce {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50%, 100% {
-    transform: translateY(24px);
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
   }
 }
 .boy-left-bounce {
   -webkit-animation-name: boy-left-bounce;
   animation-name: boy-left-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  animation-delay: 0.8s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes couple-girl-left-bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
+  }
 }
 
 @keyframes couple-girl-left-bounce {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50%, 100% {
-    transform: translateY(18px);
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
   }
 }
 .couple-girl-left-bounce {
   -webkit-animation-name: couple-girl-left-bounce;
   animation-name: couple-girl-left-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  animation-delay: 0.85s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+}
+
+@-webkit-keyframes girl-right-bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
 }
 
 @keyframes girl-right-bounce {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50%, 100% {
-    transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
   }
 }
 .girl-right-bounce {
   -webkit-animation-name: girl-right-bounce;
   animation-name: girl-right-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  animation-delay: 0.95s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+}
+
+@-webkit-keyframes family-right-bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
 }
 
 @keyframes family-right-bounce {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   50%, 100% {
-    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
   }
 }
 .family-right-bounce {
   -webkit-animation-name: family-right-bounce;
   animation-name: family-right-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  animation-delay: 0.8s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes woman-right-bounce {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50%, 100% {
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
+  }
 }
 
 @keyframes woman-right-bounce {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   50%, 100% {
-    transform: translateX(7px);
+    -webkit-transform: translateX(7px);
+            transform: translateX(7px);
   }
 }
 .woman-right-bounce {
   -webkit-animation-name: woman-right-bounce;
   animation-name: woman-right-bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-out;
-  animation-delay: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(10, 4, 1, 1deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(10, 0, 1, 0deg);
+  }
 }
 
 @keyframes swing {
@@ -188,26 +328,54 @@
 }
 .swing {
   -webkit-transform-origin: top center;
-  transform-origin: top center;
+  -ms-transform-origin: top center;
+      transform-origin: top center;
   -webkit-animation-name: swing;
   animation-name: swing;
 }
 
 .bounce-enter-active {
-  animation: bounce-in 2s;
+  -webkit-animation: bounce-in 2s;
+          animation: bounce-in 2s;
 }
 .bounce-leave-active {
   animation: bounce-in 2s reverse;
 }
-@keyframes bounce-in {
+@-webkit-keyframes bounce-in {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   50% {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes bounce-in {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -220,7 +388,17 @@
   }
 }
 .blink {
-  animation: blink 0.2s infinite alternate;
+  -webkit-animation: blink 0.2s infinite alternate;
+          animation: blink 0.2s infinite alternate;
+}
+
+@-webkit-keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes blink-2 {
@@ -232,34 +410,85 @@
   }
 }
 .blink-2 {
-  animation: blink-2 0.2s infinite alternate;
+  -webkit-animation: blink-2 0.2s infinite alternate;
+          animation: blink-2 0.2s infinite alternate;
 }
 
 /* Keyframes */
 
-@keyframes zoomInZoomOut {
+@-webkit-keyframes zoomInZoomOut {
   100% {
-    opacity: 0;
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   80% {
-    opacity: 0;
-    transform: scale(1.4);
-    transform-origin: center;
+    opacity: 1;
+    -webkit-transform: scale(1.34);
+            transform: scale(1.34);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   40% {
     opacity: 1;
-    transform: scale(1);
-    transform-origin: center;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   20% {
     opacity: 1;
-    transform: scale(1.02);
-    transform-origin: center;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   0% {
     opacity: 1;
-    transform: scale(1);
-    transform-origin: center;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@keyframes zoomInZoomOut {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
 }
 
@@ -268,7 +497,8 @@
   animation-name: zoomInZoomOut;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1
 }
 
 /** End Animation **/
