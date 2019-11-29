@@ -721,7 +721,6 @@ Vue.component('window-scene', {
       <radialGradient id="radial-gradient-6" cx="609.88" cy="489.11" r="22.1" gradientTransform="translate(0 -42.37)" xlink:href="#radial-gradient"/>
       <radialGradient id="radial-gradient-7" cx="738.73" cy="509.62" r="22.1" gradientTransform="translate(0 -42.37)" xlink:href="#radial-gradient"/>
     </defs>
-    <title>winter-scene-1</title>
     <g id="Layer_2" data-name="Layer 2">
       <g id="scene-01">
         <slot></slot>
@@ -775,14 +774,14 @@ Vue.component('window-scene', {
 })
 
 Vue.component('winter-scene', {
-    props: ['title'],
-    template: `
-
+    props: ['isShow'],
+    template: 
+    `
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768" class="full svg-container">
     <defs>
-      <svg:style>
+      <svg:style v-if="isShow">
         .cls-1 {
           fill: #b5e0ee;
         }
@@ -1362,7 +1361,6 @@ Vue.component('winter-scene', {
       <radialGradient id="radial-gradient-5" cx="540.84" cy="548.23" r="42.81" xlink:href="#radial-gradient"/>
       <radialGradient id="radial-gradient-6" cx="790.39" cy="587.95" r="42.81" xlink:href="#radial-gradient"/>
     </defs>
-    <title>winter-scene-2</title>
     <g id="Layer_2" data-name="Layer 2">
     <g id="scene-02">
     <slot></slot>
@@ -2030,7 +2028,7 @@ Vue.component('background-1', {
       return {
         width: 0,
         height: 0,
-        columnMaxNumber: 30,
+        columnMaxNumber: 40,
         columnX: 107.31
       }
     },

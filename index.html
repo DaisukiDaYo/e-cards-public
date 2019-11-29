@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div id="app" :class="{'card1': card === 1, 'card2': isTransition }">
+  <div id="app" :class="{'card1': card === 1, 'bg-transition': isTransition }">
   <div class="overlay">
     <div class="phone"></div>
     <div class="message">
@@ -34,15 +34,17 @@
       </window-scene>
     </div>
     <div class="card2" :class="{ 'animated fadeIn 1s delay-700ms': isTransition, 'hidden': card !== 2 }">
-      <div class="share-container">
-        <div class="addthis_inline_share_toolbox_jk3y"></div>
+      <div ref="frame-winter-scene">
       </div>
-      <div class="text-container stroke">
-        <h2 class="uppercase text-center accent2">The season is warm and full of joy</h2>
-        <h1 class="uppercase bold accent">Holiday Cheers Test!</h1>
-        <h2 class="uppercase text-center accent">From all of us here at <span>Company</span></h2>
-      </div>
-      <winter-scene v-if="card === 2">
+      <div ref="text-container" class="text-container stroke">
+          <h2 class="uppercase text-center accent2">The season is warm and full of joy</h2>
+          <h1 class="uppercase bold accent">Holiday Cheers!</h1>
+          <h2 class="uppercase text-center accent">From all of us here at <span>Company</span></h2>
+        </div>
+        <div ref="share-container" class="share-container">
+          <div class="addthis_inline_share_toolbox_jk3y"></div>
+        </div>
+      <winter-scene ref="background-winter" :class="{ 'hidden': card !== 2 }" :is-show="card === 2">
         <background-2></background-2>
         <!-- left -->
         <the-man-2 class="animated man-left-bounce infinite"></the-man-2>
@@ -61,17 +63,12 @@
         <the-woman-1 class="animated woman-right-bounce infinite"></the-woman-1>
         <the-girl-3 class="animated girl-right-bounce infinite"></the-girl-3>
 
-        <pronto-logo></pronto-logo>
+        <pronto-logo ref="pronto-logo"></pronto-logo>
         <snow-1 class="animated blink"></snow-1>
         <snow-2 class="animated blink-2"></snow-2>
         <g v-if="isSoundOn" @click="isSoundOn = false" class="button"><icon-sound-on></icon-sound-on></g>
         <g v-else @click="isSoundOn = true" class="button"><icon-sound-off></icon-sound-off></g>
-        <g @click="playAgain()" class="button"><button-play-again></button-play-again></g>
-        <!-- <icon-facebook class="button at-icon-wrapper at-share-btn at-svc-facebook"></icon-facebook>
-        <icon-twitter class="button"></icon-twitter>
-        <icon-linked-in class="button"></icon-linked-in>
-        <icon-email class="button"></icon-email>
-        <icon-share class="button"></icon-share> -->
+        <g @click="playAgain()" class="button"><button-play-again ref="play-again-button"></button-play-again></g>
       </winter-scene>
     </div>
   </div>

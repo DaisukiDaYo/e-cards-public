@@ -275,8 +275,8 @@
             transform: translateX(0);
   }
   50%, 100% {
-    -webkit-transform: translateX(7px);
-            transform: translateX(7px);
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
   }
 }
 
@@ -286,8 +286,8 @@
             transform: translateX(0);
   }
   50%, 100% {
-    -webkit-transform: translateX(7px);
-            transform: translateX(7px);
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
   }
 }
 .woman-right-bounce {
