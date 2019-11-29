@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800|Nunito:400,700,800&display=swap');
 body {
   margin: 0;
-  background: rgb(217,240,245);
-  background: linear-gradient(0deg, rgba(217,240,245,1) 0%, rgba(217,240,245,1) 20%, rgba(175,223,237,1) 100%);
-
+  background: #fff;
+  overflow: hidden;
 }
 
 html, body {
@@ -26,21 +25,32 @@ html, body {
 
 /* App Container */
 
-.card {
+.card1, .card2 {
   position: relative;
   height: 100vh;
+  transition: .3s;
 }
-.card svg {
+.card1 svg, .card2 svg {
   width: 100%;
   height: 100%;
+}
+.card1 {
+  background-color: #32282f;
+}
+.bg-transition {
+  background-color: #DCF2FB;
+}
+.card2 {
+  background: rgb(217,240,245);
+  background: linear-gradient(0deg, rgba(217,240,245,1) 0%, rgba(217,240,245,1) 20%, rgba(175,223,237,1) 100%);
 }
 .text-container {
   text-align: center;
   font-size: 2vw;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -200%);
+  transform: translateX(-50%);
 }
 h1, h2 {
   margin: 0;
@@ -50,6 +60,9 @@ h1 {
 }
 h2 {
   font-family: 'Nunito Sans', sans-serif;
+}
+.hidden {
+  display: none;
 }
 .bold {
   font-weight: 700;
@@ -62,11 +75,9 @@ h2 {
   margin: auto;
 }
 .vitual-button {
-  border: 1px solid #fff;
-  background-color: rgba(255,255,255, .3);
+  cursor: pointer;
   position: absolute;
   z-index: 3;
-  cursor: pointer;
 }
 .vignette-effect {
    position: static;
@@ -80,54 +91,36 @@ h2 {
     background: radial-gradient(transparent, #0c0c0c)
 }
 
-
 .button {
   cursor: pointer;
+  transition: .3s;
+}
+.button:hover, .translateY-5px  {
+  transform: translateY(-5px);
+  transform-origin: center;
 }
 .button:active  {
   transform: translateY(2px);
   transform-origin: center;
 }
 .svg-background {
-  transform: translate(-50%, -50%) ;
+  transform: translate(-100%, -50%) ;
 }
 
 .svg-background-winter {
   transform: scale(1.23);
   transform-origin: center;
 }
-/* .svg-container  {
-  position: fixed;
-  height: 100%;
+.bg-wallpaper {
+  fill: red;
+  background-color: yellow;
+}
+.share-container {
+  position: absolute;
+  bottom: 0;
   left: 50%;
-  margin-left: -88.888vh;
+  transform: translateX(-50%);
 }
-
-@media (min-aspect-ratio: 16/9) {
-  .svg-container  {
-    height: auto;
-    left: 0;
-    width: 100%;
-    top: 50%;
-    margin-left: 0;
-    margin-top: -28.125vw;
-  }
-} */
-
-@media  (max-width: 991px) {}
-@media (max-width: 767px) {
-  /* html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  } */
-}
-
 
 
 /* Overlay On Mobile Screen */
